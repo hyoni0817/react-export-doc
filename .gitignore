@@ -1,2 +1,11 @@
 node_modules
 .tsbuildinfo
+
+# macos 파일
+.DS_Store
+
+# 빌드 산출물
+dist
+
+#npm pack 테스트 결과물
+*.tgz

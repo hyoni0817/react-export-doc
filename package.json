@@ -1,13 +1,24 @@
 {
   "name": "react-export-doc",
-  "version": "1.0.0",
+  "version": "0.1.0",
   "description": "A simple way to export React components as downloadable PDF files.",
-  "main": "index.js",
-  "directories": {
-    "lib": "lib"
+  "main": "./dist/index.js",
+  "module": "./dist/index.mjs",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.mjs",
+      "require": "./dist/index.js"
+    }
   },
+  "files": [
+    "dist"
+  ],
+  "sideEffects": false,
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "tsup",
+    "prepublishOnly": "npm run build"
   },
   "repository": {
     "type": "git",
@@ -25,9 +36,7 @@
   "homepage": "https://github.com/hyoni0817/react-export-doc#readme",
   "dependencies": {
     "html2canvas-pro": "^2.0.2",
-    "jspdf": "^4.2.1",
-    "react": "^19.2.5",
-    "react-dom": "^19.2.5"
+    "jspdf": "^4.2.1"
   },
   "devDependencies": {
     "@types/react": "^19.2.14",
@@ -36,6 +45,11 @@
     "eslint-config-prettier": "^10.1.8",
     "prettier": "^3.8.3",
     "tsup": "^8.5.1",
+    "tsup-plugin-prepend-directive": "^0.1.2",
     "typescript": "^6.0.3"
+  },
+  "peerDependencies": {
+    "react": ">=18",
+    "react-dom": ">=18"
   }
 }
