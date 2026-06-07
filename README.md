@@ -143,4 +143,4 @@ components you can use inside `renderHeader` / `renderFooter`.
 
 ## License
 
-MIT © [imadevfairy](https://github.com/hyoni0817)
+MIT © [hyoni0817](https://github.com/hyoni0817)
