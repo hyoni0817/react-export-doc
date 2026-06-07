@@ -10,7 +10,7 @@ interface ReactDocProviderProps {
   children: React.ReactNode;
 }
 
-interface ReactDocContextValue {
+export interface ReactDocContextValue {
   exportPDF: (component: React.ReactNode, options: { filename: string }) => Promise<void>;
 }
 
