@@ -18,6 +18,8 @@
   "sideEffects": false,
   "scripts": {
     "build": "tsup",
+    "typecheck": "tsc --noEmit",
+    "release": "npm run build && changeset publish",
     "prepublishOnly": "npm run build"
   },
   "repository": {
