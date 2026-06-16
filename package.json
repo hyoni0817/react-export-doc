@@ -1,6 +1,6 @@
 {
   "name": "react-export-doc",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "A simple way to export React components as downloadable PDF files.",
   "main": "./dist/index.js",
   "module": "./dist/index.mjs",
